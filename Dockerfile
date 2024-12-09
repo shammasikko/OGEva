@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.10.8-slim-buster
 
 RUN apt update && apt upgrade -y
 RUN apt install git -y
@@ -8,5 +8,5 @@ RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN mkdir /OGEva
 WORKDIR /OGEva
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+COPY . /OGEva
+CMD ["python", "bot.py"]
