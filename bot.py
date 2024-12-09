@@ -16,6 +16,20 @@ from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 
+# for prevent stoping the bot after 1 week
+logging.getLogger("asyncio").setLevel(logging.CRITICAL -1)
+
+# peer id invaild fixxx
+from pyrogram import utils as pyroutils
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
+
+from plugins.webcode import bot_run
+from os import environ
+from aiohttp import web as webserver
+
+PORT_CODE = environ.get("PORT", "8080")
+
 class Bot(Client):
 
     def __init__(self):
@@ -42,6 +56,13 @@ class Bot(Client):
         self.username = '@' + me.username
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
+        print("Og Eva Re-editeD ⚡")
+
+        client = webserver.AppRunner(await bot_run())
+        await client.setup()
+        bind_address = "0.0.0.0"
+        await webserver.TCPSite(client, bind_address,
+        PORT_CODE).start()
 
     async def stop(self, *args):
         await super().stop()
