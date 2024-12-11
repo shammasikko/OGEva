@@ -63,10 +63,20 @@ You can deploy this bot anywhere.
 </p>
 </details>
 
+<details><summary>Deploy To Koyeb</summary>
+<p>
+<br>
+<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/GouthamSER/OGEva&env[BOT_TOKEN]&env[API_ID]&env[API_HASH]&env[CHANNELS]&env[ADMINS]&env[PICS]&env[LOG_CHANNEL]&env[AUTH_CHANNEL]&env[CUSTOM_FILE_CAPTION]&env[DATABASE_URI]&env[DATABASE_NAME]&env[COLLECTION_NAME]=files&env[CHANNELS]&env[IMDB]=False&env[SINGLE_BUTTON]=True&env[AUTH_GROUPS]&env[P_TTI_SHOW_OFF]=True&branch=main&name=ogeva">
+ <img src="https://www.koyeb.com/static/images/deploy/button.svg">
+</a>
+</p>
+</details>
+
+
 <details><summary>Deploy To VPS</summary>
 <p>
 <pre>
-git clone https://github.com/EvamariaTG/evamaria
+git clone https://github.com/GouthamSER/OGEva
 # Install Packages
 pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
@@ -117,6 +127,7 @@ python3 bot.py
  - Thanks To Mahesh For His Awesome [Media-Search-bot](https://github.com/Mahesh0253/Media-Search-bot)
  - Thanks To [Trojanz](https://github.com/trojanzhex) for Their Awesome [Unlimited Filter Bot](https://github.com/TroJanzHEX/Unlimited-Filter-Bot) And [AutoFilterBoT](https://github.com/trojanzhex/auto-filter-bot)
  - Thanks To All Everyone In This Journey
+ - Thanks to me [GouthamJosh](https://github.com/GouthamSER)
 
 ### Note
 
