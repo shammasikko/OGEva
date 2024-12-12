@@ -436,7 +436,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/wudixh14'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/CinemaKandaloOfficial'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -706,7 +706,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = Hey 👋🏻 {mention}\n\nHere is what i found for your query {search}👇"
     if imdb and imdb.get('poster'):
         try:
             a1=await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
