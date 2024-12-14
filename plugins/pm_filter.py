@@ -668,10 +668,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f" 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="Next>>", callback_data=f"next_{req}_{key}_{offset}")]
         )
-    else:
-        btn.append(
-            [InlineKeyboardButton(text="1/1", callback_data="pages")]
-        )
+    
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
