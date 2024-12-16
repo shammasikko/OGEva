@@ -15,7 +15,7 @@ Only authorised admins can access don't waste your time 😌</b>"""
 Editing the Bot 💐
 
 <b>DEVS:</b>
-- <a href=https://t.me/CinemaKandaloOfficial>!</a>"""
+- <a href=https://t.me/CinemaKandaloOfficial>ꜱᴏᴜʀᴄᴇ</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and bot will respond whenever a keyword is found the message
