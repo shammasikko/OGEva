@@ -44,7 +44,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ʟɪɴᴋꜱ 🔗', url='https://t.me/+w8aAsobsNpEzOTA9')
             ],[
-            InlineKeyboardButton('📌 ɢʀᴏᴜᴩ', url='https://t.me/CinemaKandalo')
+            InlineKeyboardButton('📌 ɢʀᴏᴜᴩ', url='https://t.me/CinemaKandalo'),
             InlineKeyboardButton('🛠 ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/CinemaKandaloOfficial')
             ],[
             InlineKeyboardButton('⚠️ ʜᴇʟᴩ', callback_data='help'),
@@ -88,13 +88,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🔗 ᴏᴜʀ ᴄʜᴀɴɴᴇʟꜱ ʟɪɴᴋꜱ 🔗', url='https://t.me/+w8aAsobsNpEzOTA9')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Updates', url='https://t.me/CinemaKandaloOfficial')
+            InlineKeyboardButton('📌 ɢʀᴏᴜᴩ', url='https://t.me/CinemaKandalo'),
+            InlineKeyboardButton('🛠 ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/CinemaKandaloOfficial')
             ],[
-            InlineKeyboardButton('Help', callback_data='help'),
-            InlineKeyboardButton('About', callback_data='about')
+            InlineKeyboardButton('⚠️ ʜᴇʟᴩ', callback_data='help'),
+            InlineKeyboardButton('⚙ ᴀʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
